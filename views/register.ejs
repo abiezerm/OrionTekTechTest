@@ -1,0 +1,51 @@
+<h1>Pagina de registro!</h1>
+<form action="/users/register" method="POST">
+    <div>
+        <label for="name">Nombre</label>
+        <input 
+            type="name" 
+            name="name" 
+            placeholder="Nombre" 
+            value="<%= typeof name != 'undefined' ? name : '' %>"/>
+    </div>
+    <div>
+        <label for="username">Nombre de Usuario</label>
+        <input 
+            type="text" 
+            name="username" 
+            placeholder="Nombre de usuario" 
+            value="<%= typeof username != 'undefined' ? username : '' %>"/>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo Electronico"
+          value="<%= typeof email != 'undefined' ? email : '' %>"
+        />
+    </div>
+    <div >
+        <label for="password">Contrasena</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Inserte contrasena"
+          value="<%= typeof password != 'undefined' ? password : '' %>"
+        />
+      </div>
+      <div >
+        <label for="password2">Confirme Contrasena</label>
+        <input
+          type="password"
+          name="password2"
+          placeholder="Confirme contrasena"
+          value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">
+        Registrarse
+      </button>
+    </form>
+<p >Ya tiene una cuenta? <a href="/users/login">Iniciar Sesion</a></p>
+    
