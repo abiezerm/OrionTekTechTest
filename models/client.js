@@ -28,8 +28,7 @@ const ClientSchema = new mongoose.Schema({
         postalCode: {
             type: Number,
             required: false
-        },
-        required: true
+        }
     }
 });
 
